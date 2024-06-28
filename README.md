@@ -11,20 +11,22 @@ This repository showcases the projects I completed during my internship at Oasis
 **Tools:** Python, scikit-learn, pandas, matplotlib.  
 **Note:** The Iris dataset can be downloaded from the `sklearn.datasets` library in Python.
 
-2. Unemployment Analysis
-Description: In this project, I analyzed unemployment data from a specific dataset. The objective was to uncover trends and patterns in the unemployment rate, employment estimates, and labor participation rate.
-Techniques Used: Data cleaning, statistical analysis, visualization, and interpretation of results.
-Tools: Python, pandas, seaborn, matplotlib.
+### 2. Unemployment Analysis
 
-3. Sales Analysis
-Description: This project focuses on analyzing sales data to provide insights into sales performance, trends, and patterns. The analysis helps in understanding the factors influencing sales and identifying opportunities for improvement.
-Techniques Used: Data aggregation, time series analysis, data visualization, and reporting.
-Tools: Python, pandas, matplotlib, seaborn.
+**Description:** In this project, I analyzed unemployment data from a specific dataset. The objective was to uncover trends and patterns in the unemployment rate, employment estimates, and labor participation rate.  
+**Techniques Used:** Data cleaning, statistical analysis, visualization, and interpretation of results.  
+**Tools:** Python, pandas, seaborn, matplotlib.
 
-How to Use:
-Clone the repository.
-Explore the projects and run the provided code.
-Feel free to reach out if you have any questions or feedback!
+### 3. Sales Analysis
+
+**Description:** This project focuses on analyzing sales data to provide insights into sales performance, trends, and patterns. The analysis helps in understanding the factors influencing sales and identifying opportunities for improvement.  
+**Techniques Used:** Data aggregation, time series analysis, data visualization, and reporting.  
+**Tools:** Python, pandas, matplotlib, seaborn.
+
+## How to Use:
+
+1. Clone the repository.
+2. Explore the projects and run the provided code.
 
 **Code Snippet to Load Iris Dataset:**
 ```python
@@ -37,4 +39,3 @@ iris = load_iris()
 # Create a DataFrame with feature names and target
 iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 iris_df['Species'] = iris.target
-

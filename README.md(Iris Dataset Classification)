@@ -1,57 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+# Iris Dataset Classification
 
-<h1>Iris Dataset Classification</h1>
+This project involves the classification of the Iris dataset using various machine learning algorithms. The goal is to accurately predict the species of iris flowers based on their features.
 
-<p>This project involves the classification of the Iris dataset using various machine learning algorithms. The goal is to accurately predict the species of iris flowers based on their features.</p>
+## Overview
 
-<h2>Overview</h2>
+The Iris dataset is a classic dataset used for classification tasks in machine learning. It contains 150 samples of iris flowers, with four features: sepal length, sepal width, petal length, and petal width. The dataset is divided into three classes, each representing a different species of iris.
 
-<p>The Iris dataset is a classic dataset used for classification tasks in machine learning. It contains 150 samples of iris flowers, with four features: sepal length, sepal width, petal length, and petal width. The dataset is divided into three classes, each representing a different species of iris.</p>
+## Project Details
 
-<h2>Project Details</h2>
+### Libraries Used
+- `sklearn`: For machine learning algorithms and dataset handling
+- `pandas`: For data manipulation and analysis
+- `numpy`: For numerical operations
+- `seaborn`: For data visualization
+- `matplotlib`: For plotting graphs
 
-<h3>Libraries Used</h3>
-<ul>
-    <li><code>sklearn</code>: For machine learning algorithms and dataset handling</li>
-    <li><code>pandas</code>: For data manipulation and analysis</li>
-    <li><code>numpy</code>: For numerical operations</li>
-    <li><code>seaborn</code>: For data visualization</li>
-    <li><code>matplotlib</code>: For plotting graphs</li>
-</ul>
+### Steps Followed
+1. **Loading the Dataset:** The Iris dataset is loaded from the `sklearn.datasets` module.
+2. **Data Preparation:** A DataFrame is created with feature names and target labels.
+3. **Exploratory Data Analysis:**
+    - Displaying the DataFrame
+    - Statistical summary of the data
+    - Checking for missing values
+    - Computing the correlation matrix
+4. **Data Splitting:** The dataset is split into training and testing sets.
+5. **Model Training:** A Logistic Regression model is trained on the training set.
+6. **Model Evaluation:**
+    - Accuracy calculation
+    - Confusion matrix and classification report
+    - Visualization of the confusion matrix using a heatmap
 
-<h3>Steps Followed</h3>
-<ol>
-    <li><strong>Loading the Dataset:</strong> The Iris dataset is loaded from the <code>sklearn.datasets</code> module.</li>
-    <li><strong>Data Preparation:</strong> A DataFrame is created with feature names and target labels.</li>
-    <li><strong>Exploratory Data Analysis:</strong>
-        <ul>
-            <li>Displaying the DataFrame</li>
-            <li>Statistical summary of the data</li>
-            <li>Checking for missing values</li>
-            <li>Computing the correlation matrix</li>
-        </ul>
-    </li>
-    <li><strong>Data Splitting:</strong> The dataset is split into training and testing sets.</li>
-    <li><strong>Model Training:</strong> A Logistic Regression model is trained on the training set.</li>
-    <li><strong>Model Evaluation:</strong>
-        <ul>
-            <li>Accuracy calculation</li>
-            <li>Confusion matrix and classification report</li>
-            <li>Visualization of the confusion matrix using a heatmap</li>
-        </ul>
-    </li>
-</ol>
+### Loading the Dataset
 
-<h3>Loading the Dataset</h3>
-<p>The Iris dataset can be loaded directly from the <code>sklearn.datasets</code> module as shown below:</p>
+The Iris dataset can be loaded directly from the `sklearn.datasets` module as shown below:
 
-<pre><code>from sklearn.datasets import load_iris
+```python
+from sklearn.datasets import load_iris
 
 # Load the iris dataset
 iris = load_iris()
@@ -59,27 +43,17 @@ iris = load_iris()
 # Create a DataFrame with feature names and target
 iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 iris_df['Species'] = iris.target
-</code></pre>
+Results
+The Logistic Regression model achieved an accuracy score on the test set. The confusion matrix and classification report provide detailed insights into the model's performance.
 
-<h2>Results</h2>
+How to Run
+Clone the repository.
+Install the required libraries: sklearn, pandas, numpy, seaborn, matplotlib.
+Run the code in a Python environment (e.g., Jupyter Notebook, VSCode).
 
-<p>The Logistic Regression model achieved an accuracy score on the test set. The confusion matrix and classification report provide detailed insights into the model's performance.</p>
+Feel free to explore the project and reach out if you have any questions or feedback!
 
-<h2>How to Run</h2>
+Contact Information:
 
-<ol>
-    <li>Clone the repository.</li>
-    <li>Install the required libraries: <code>sklearn</code>, <code>pandas</code>, <code>numpy</code>, <code>seaborn</code>, <code>matplotlib</code>.</li>
-    <li>Run the code in a Python environment (e.g., Jupyter Notebook, VSCode).</li>
-</ol>
-
-<p>Feel free to explore the project and reach out if you have any questions or feedback!</p>
-
-<hr>
-
-<h3>Contact Information:</h3>
-<p><strong>Name:</strong> Maseera Patni</p>
-<p><strong>Email:</strong> maseerapanja@gmail.com</p>
-
-</body>
-</html>
+Name: Maseera Patni
+Email: maseerapanja@gmail.com

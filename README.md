@@ -11,19 +11,7 @@ This repository showcases the projects I completed during my internship at Oasis
 **Tools:** Python, scikit-learn, pandas, matplotlib.  
 **Note:** The Iris dataset can be downloaded from the `sklearn.datasets` library in Python.
 
-**Code Snippet to Load Iris Dataset:**
-```python
-from sklearn.datasets import load_iris
-import pandas as pd
-
-# Load the iris dataset
-iris = load_iris()
-
-# Create a DataFrame with feature names and target
-iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
-iris_df['Species'] = iris.target
-
-### 2. Unemployment Analysis
+2. Unemployment Analysis
 Description: In this project, I analyzed unemployment data from a specific dataset. The objective was to uncover trends and patterns in the unemployment rate, employment estimates, and labor participation rate.
 Techniques Used: Data cleaning, statistical analysis, visualization, and interpretation of results.
 Tools: Python, pandas, seaborn, matplotlib.
@@ -38,7 +26,15 @@ Clone the repository.
 Explore the projects and run the provided code.
 Feel free to reach out if you have any questions or feedback!
 
-Contact Information:
+**Code Snippet to Load Iris Dataset:**
+```python
+from sklearn.datasets import load_iris
+import pandas as pd
 
-Name: Maseera Patni
-Email: maseerapanja@gmail.com
+# Load the iris dataset
+iris = load_iris()
+
+# Create a DataFrame with feature names and target
+iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+iris_df['Species'] = iris.target
+
